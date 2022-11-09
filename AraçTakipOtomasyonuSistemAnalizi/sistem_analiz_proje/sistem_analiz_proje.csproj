@@ -1,0 +1,288 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{24CF2B62-4A4D-4596-B4A7-1CC7016C95EF}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>sistem_analiz_proje</RootNamespace>
+    <AssemblyName>sistem_analiz_proje</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DboGarajOtomasyonDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DboGarajOtomasyonDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="frmanaprogram.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmanaprogram.Designer.cs">
+      <DependentUpon>frmanaprogram.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmgiriş.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmgiriş.Designer.cs">
+      <DependentUpon>frmgiriş.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmgaraj.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmgaraj.Designer.cs">
+      <DependentUpon>frmgaraj.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmşoför.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmşoför.Designer.cs">
+      <DependentUpon>frmşoför.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmiletisim.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmiletisim.Designer.cs">
+      <DependentUpon>frmiletisim.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmaciltel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmaciltel.Designer.cs">
+      <DependentUpon>frmaciltel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Models\smsgonderme.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="sorgulama.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="sorgulama.Designer.cs">
+      <DependentUpon>sorgulama.cs</DependentUpon>
+    </Compile>
+    <Compile Include="sqlbaglantisi.cs" />
+    <Compile Include="yagtakip.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="yagtakip.Designer.cs">
+      <DependentUpon>yagtakip.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="frmanaprogram.resx">
+      <DependentUpon>frmanaprogram.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmgiriş.resx">
+      <DependentUpon>frmgiriş.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmgaraj.resx">
+      <DependentUpon>frmgaraj.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmşoför.resx">
+      <DependentUpon>frmşoför.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmiletisim.resx">
+      <DependentUpon>frmiletisim.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmaciltel.resx">
+      <DependentUpon>frmaciltel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="sorgulama.resx">
+      <DependentUpon>sorgulama.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="yagtakip.resx">
+      <DependentUpon>yagtakip.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="DboGarajOtomasyonDataSet.xsc">
+      <DependentUpon>DboGarajOtomasyonDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="DboGarajOtomasyonDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DboGarajOtomasyonDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DboGarajOtomasyonDataSet.xss">
+      <DependentUpon>DboGarajOtomasyonDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\px.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\px1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\px2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\px11.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\istockphoto-1289964653-612x612.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\263-2636251_car-in-garage-clipart-hd-png-download.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\263-2636251_car-in-garage-clipart-hd-png-download1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\istockphoto-1289964653-612x612.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\44170.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\png-transparent-ford-motor-company-ford-gt-car-ford-focus-ford-emblem-label-text.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Untitled-1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\indir %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\indir.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\png-transparent-ford-motor-company-ford-gt-car-ford-focus-ford-emblem-label-text1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\png-transparent-mercedes-benz-c-class-car-mercedes-benz-a-class-mercedes-benz-c112-mercedes-benz.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\png-transparent-scania-logo-scania-ab-car-daf-trucks-ab-volvo-scania-truck-logo-fictional-character.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\renault-logo-11530960601aqpga93waw.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\indir %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iveco.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\murat-oto-kurtarici-logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WhatsApp Image 2022-03-14 at 15.00.58.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mail.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tel.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cevre-otopark-e1425728655472.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pexels-lê-minh-977213.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WhatsApp Image 2022-03-14 at 15.28.44.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tow-truck-2901948_960_720.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WhatsApp Image 2022-03-14 at 15.00.581.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WhatsApp Image 2022-03-14 at 15.00.582.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\istockphoto-1289964653-612x6121.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Baslksz-1_kasdopya.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WhatsApp Image 2022-03-14 at 15.28.441.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Baslksz-1_kasdopya1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\px1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cevre-otopark-e14257286554721.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pexels-lê-minh-9772131.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\a.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ccc.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
